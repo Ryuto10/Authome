@@ -26,7 +26,8 @@
 
 <!-- Start: Head Image-->
 <div class="top-image">
-    <img src="images/service_illustration.png" width=90%>
+    <!-- <img src="images/service_illustration.png" width=90%> -->
+    <img src="https://github.com/Ryuto10/Authome/blob/main/docs/images/service_Illustration.png?raw=true" width=90%>
     <div class="text-on-img">
         Experience the world online with locals
     </div>
@@ -34,7 +35,7 @@
 <!-- End: Head Image -->
 
 <!-- Start: about service -->
-<div class="popular-cities">
+<div class="main-text">
     <h1>About Service</h1>
     <ul>
         <li>Japanese local LIVESTREAMS Tokyo trip video just for you.</li>
@@ -104,19 +105,21 @@
 </div>
 <!-- End: about service -->
 
-<!-- stripe -->
+<!-- Start: stripe -->
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
-  id="checkout-button-price_1KsVpzAWgs2bi5RjdVEwxk7q"
-  role="link"
-  type="button"
->
-  Checkout
-</button>
+<div class="main-text">
+    <button
+            style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
+            id="checkout-button-price_1KsVpzAWgs2bi5RjdVEwxk7q"
+            role="link"
+            type="button"
+    >
+        Checkout
+    </button>
+</div>
 
 <div id="error-message"></div>
 
@@ -155,7 +158,10 @@
     });
   });
 })();
+
+
 </script>
+<!-- End: stripe -->
 
 </body>
 </html>

@@ -103,8 +103,8 @@ header nav {
     text-stroke: 1.5px #000000;
 }
 
-/* about-serice */
-.about-service {
+/* main text */
+.main-text {
     width: 90%;
     margin: 20px auto;
 }
@@ -122,3 +122,4 @@ header nav {
     height: 500px;
 	margin: 0px;
 }
+
