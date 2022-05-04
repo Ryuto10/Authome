@@ -26,7 +26,7 @@
 
 <!-- Start: Head Image-->
 <div class="top-image">
-    <img src="https://github.com/Ryuto10/Authome/blob/main/docs/images/service_Illustration.png?raw=true" width=90%>
+    <img src="images/service_illustration.png" width=90%>
     <div class="text-on-img">
         Experience the world online with locals
     </div>
@@ -103,6 +103,31 @@
     </ol>
 </div>
 <!-- End: about service -->
+
+<!-- test -->
+<form>
+<input type="button" value="環境変数" onclick="reWrite(0)">
+<input type="button" value="定数" onclick="reWrite(1)">
+</form>
+
+<div id="str">このタグの中身を書き換えます。</div>
+
+<script>
+function reWrite(num)
+{
+  if (document.getElementById)
+  {
+    if (num==0)
+    {
+      document.getElementById("str").textContent=process.env.DEV_SECRET_KEY;
+    }
+    else
+    {
+      document.getElementById("str").textContent="これは定数";
+    }
+  }
+}
+</script>
 
 
 </body>
