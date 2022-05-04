@@ -104,6 +104,7 @@
 </div>
 <!-- End: about service -->
 
+<!-- stripe -->
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
@@ -139,8 +140,8 @@
        * Instead use one of the strategies described in
        * https://stripe.com/docs/payments/checkout/fulfill-orders
        */
-      successUrl: window.location.protocol + '//coordirent.com/success',
-      cancelUrl: window.location.protocol + '//coordirent.com/canceled',
+      successUrl: 'https://ryuto10.github.io/Authome/success.html',
+      cancelUrl: 'https://ryuto10.github.io/Authome/canceled.html',
     })
     .then(function (result) {
       if (result.error) {
