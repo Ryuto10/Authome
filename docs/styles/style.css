@@ -77,6 +77,12 @@ header li {
 header nav {
    margin: 0 0 0 auto;
 }
+a:link {
+    color: #ff9494;
+}
+a:visited {
+    color: #FF5151;
+}
 
 /* top page */
 .top-image {
@@ -87,7 +93,7 @@ header nav {
     position: absolute;
     top: 21%;
 }
-.top-image .text-on-img p{
+.top-image .text-on-img p {
     color: #ffffff;
     text-align: center;
     margin-left: 13%;
@@ -115,7 +121,10 @@ header nav {
     /* 横スクロール用 */
     display: inline-block;
     width: 700px;
-    height: 500px;
+    height: 550px;
 	margin: 0px;
 }
-
+.popular-cities .item img{
+    width: 700px;
+    height: 500px;
+}
