@@ -12,13 +12,13 @@
 <header class="site-header">
     <p class="brand">
         <img src="images/logo.png">
-        <a href="#" class="brand">
+        <a href="https://ryuto10.github.io/Authome/" class="brand" style="color:white;">
             Authome
         </a>
     </p>
     <nav class="nav">
         <ul>
-            <li><a href="#" class="header-menu">Contact</a></li>
+            <li><a href="https://www.instagram.com/bando_san/" class="header-menu" style="color:white;">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -29,7 +29,7 @@
     <!-- <img src="images/service_illustration.png" width=90%> -->
     <img src="https://github.com/Ryuto10/Authome/blob/main/docs/images/service_Illustration.png?raw=true" width=90%>
     <div class="text-on-img">
-        Experience the world online with locals
+        <p>ONLINE JAPAN TRAVEL WITH LOCALS</p>
     </div>
 </div>
 <!-- End: Head Image -->
@@ -38,39 +38,73 @@
 <div class="main-text">
     <h1>About Service</h1>
     <ul>
-        <li>Japanese local LIVESTREAMS Tokyo trip video just for you.</li>
-        <li>You can control the local Japanese like you do player character in a game:</li>
+        <li>Japanese local livestreams Tokyo trip video just for you.</li>
+        <li>You can control the local as in a RPG game:</li>
         <ul>
             <li>ask to take photos,</li>
-            <li>ask to buy souvenirs,...</li>
+            <li>ask to buy souvenirs,</li>
+            <li>ask to go into stores,...</li>
         </ul>
         <li>We provide authentic experiences that can only be got locally.</li>
     </ul>
 
     <!-- Start: popular cities -->
-    <h1>Popular Cities</h1>
+    <h1>Popular Attractions</h1>
     <ul class="popular-cities">
         <li class="item">
-            <img src="images/akihabara.jpeg" width=700px>
+            <a href="https://ryuto10.github.io/Authome/yanaka.html">
+                <span>Yanaka</span>
+                <img src="images/yanaka.png">
+            </a>
         </li>
         <li class="item">
-            <img src="images/asakusa-temple.jpeg" width=700px>
+            <a href="https://ryuto10.github.io/Authome/asakusa.html">
+                <span>Asakusa</span>
+                <img src="images/asakusa-temple.jpeg">
+            </a>
         </li>
         <li class="item">
-            <img src="images/marunouchi.jpeg" width=700px>
+            <a href="https://ryuto10.github.io/Authome/akihabara.html">
+                <span>Akihabara</span>
+                <img src="images/akihabara.jpeg">
+            </a>
         </li>
         <li class="item">
-            <img src="images/yanaka.png" width=700px>
+            <a href="https://ryuto10.github.io/Authome/marunouchi.html">
+                <span>Marunouchi</span>
+                <img src="images/marunouchi.jpeg">
+            </a>
         </li>
         <li class="item">
-            <img src="images/kyoto.jpg" width=700px>
+            <a href="https://ryuto10.github.io/Authome/ginza.html">
+                <span>Ginza</span>
+                <img src="images/ginza.jpg">
+            </a>
+        </li>
+        <li class="item">
+            <a href="https://ryuto10.github.io/Authome/shinjuku.html">
+                <span>Shinjuku</span>
+                <img src="images/shinjuku.jpg">
+            </a>
+        </li>
+        <li class="item">
+            <a href="https://ryuto10.github.io/Authome/shibuya.html">
+                <span>Shibuya</span>
+                <img src="images/shibuya.jpg">
+            </a>
+        </li>
+        <li class="item">
+            <a href="https://ryuto10.github.io/Authome/harajuku.html">
+                <span>Harajuku</span>
+                <img src="images/harajuku.jpg">
+            </a>
         </li>
     </ul>
     <!-- End: popular cities -->
 
     <h1>Price</h1>
     <ul>
-        <li>From $ 30/h</li>
+        <li>From $ 20/h</li>
         <li>Cost of products & shipping fee (only if you buy something in Japan)</li>
     </ul>
 
@@ -79,6 +113,10 @@
         <li>Contact a local Japanese
             <ul>
                 <li>Takuma Bando</li>
+                    <ul>
+                        <li><a href="https://www.instagram.com/bando_san/">instagram</a></li>
+                        <li><a href="https://www.facebook.com/bubblebundle">facebook</a></li>
+                    </ul>
             </ul>
         </li>
 
@@ -112,7 +150,7 @@
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <div class="main-text">
     <button
-            style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
+            style="background-color:#FF5151;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer;margin-bottom:50px;margin-left:40px;"
             id="checkout-button-price_1KsVpzAWgs2bi5RjdVEwxk7q"
             role="link"
             type="button"
@@ -127,14 +165,14 @@
 (function() {
   var stripe = Stripe('pk_live_51HWmZ2AWgs2bi5RjabS2CjO4FJavjVFPo6kZax75ryqXSPp0pE0TgfCgMzUH3UWzTCweSCIo81gz7JZoZxT6jf4Z00IQYxQ5je');
 
-  var checkoutButton = document.getElementById('checkout-button-price_1KsVpzAWgs2bi5RjdVEwxk7q');
+  var checkoutButton = document.getElementById('checkout-button-price_1KzG7RAWgs2bi5RjpUP2Ioid');
   checkoutButton.addEventListener('click', function () {
     /*
      * When the customer clicks on the button, redirect
      * them to Checkout.
      */
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1KsVpzAWgs2bi5RjdVEwxk7q', quantity: 1}],
+      lineItems: [{price: 'price_1KzG7RAWgs2bi5RjpUP2Ioid', quantity: 1}],
       mode: 'payment',
       /*
        * Do not rely on the redirect to the successUrl for fulfilling
