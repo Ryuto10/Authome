@@ -45,7 +45,7 @@ header {
 header .brand img{
     vertical-align: middle;
     display: inline-block;
-    width: 39px;
+    width: 49px;
 
     cursor: pointer;
 }
@@ -54,7 +54,7 @@ header .brand {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 31px;
+    font-size: 37px;
     font-family: sans-serif;
 }
 header .header-menu {
@@ -62,7 +62,7 @@ header .header-menu {
     color: #ffffff;
     text-decoration: none;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 27px;
     font-family: sans-serif;
 }
 header ul {
