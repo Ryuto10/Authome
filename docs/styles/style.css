@@ -163,3 +163,15 @@ a:visited {
 .attraction-text img{
     width: 90%;
 }
+
+.checkout button {
+    background-color: #FF5151;
+    color: #FFF;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}

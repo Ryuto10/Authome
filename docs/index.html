@@ -3,8 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>Authome</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3"></script>
 </head>
 <body>
 
@@ -38,14 +41,19 @@
 <div class="main-text">
     <h1>About Service</h1>
     <ul>
-        <li>Japanese local livestreams Tokyo trip video just for you.</li>
+        <li>Japanese local livestreams Japan trip video just for you.</li>
+        <li>You can go everywhere you want</li>
         <li>You can control the local as in a RPG game:</li>
         <ul>
             <li>ask to take photos,</li>
             <li>ask to buy souvenirs,</li>
             <li>ask to go into stores,...</li>
         </ul>
-        <li>We provide authentic experiences that can only be got locally.</li>
+        <li>You can enjoy authentic experiences and information that can only be got locally:</li>
+        <ul>
+            <li>feel the real atmosphere,</li>
+            <li>gather local information for your next trip to Japan,...</li>
+        </ul>
     </ul>
 
     <!-- Start: popular cities -->
@@ -104,8 +112,8 @@
 
     <h1>Price</h1>
     <ul>
-        <li>From $ 20/h</li>
-        <li>Cost of products & shipping fee (only if you buy something in Japan)</li>
+        <li><b>From $ 0</b>: you can decide the price of this service after using.</li>
+        <li>Cost of products & shipping fee (only if you buy something)</li>
     </ul>
 
     <h1>How It Works</h1>
@@ -138,29 +146,25 @@
         </li>
 
         <li>Pay the fee
+            <ul>
+                <li>After your experience is done, you pay the fee.</li>
+                <li>The default fee is $20/h but you can decide how much you pay for this service.</li>
+            </ul>
         </li>
+        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+        <div class="checkout">
+            <button id="checkout-button-price_1KzG7RAWgs2bi5RjpUP2Ioid" role="link" type="button">
+                $20.00
+            </button>
+        </div>
+
+        <div id="error-message"></div>
     </ol>
 </div>
 <!-- End: about service -->
 
+
 <!-- Start: stripe -->
-<!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
-
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<div class="main-text">
-    <button
-            style="background-color:#FF5151;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer;margin-bottom:50px;margin-left:40px;"
-            id="checkout-button-price_1KzG7RAWgs2bi5RjpUP2Ioid"
-            role="link"
-            type="button"
-    >
-        Checkout
-    </button>
-</div>
-
-<div id="error-message"></div>
-
 <script>
 (function() {
   var stripe = Stripe('pk_live_51HWmZ2AWgs2bi5RjabS2CjO4FJavjVFPo6kZax75ryqXSPp0pE0TgfCgMzUH3UWzTCweSCIo81gz7JZoZxT6jf4Z00IQYxQ5je');
